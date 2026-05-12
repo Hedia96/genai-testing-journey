@@ -288,12 +288,10 @@ You need intuition for WHY LLMs behave the way they do. This informs all testing
 
 **Mini-Project: `llm-concepts-notebook`**
 ```
-Create a Jupyter notebook documenting:
-├── Key LLM concepts in your own words
-├── Diagrams/visualizations
-├── Examples that demonstrate each concept
-├── Common misconceptions
-└── Testing implications for each
+Build concept exploration utilities:
+├── Token generation simulator with temperature control
+├── Prompt analyzer (token estimation, context checks)
+└── Run demos comparing different settings
 ```
 
 **Resources:**
@@ -315,11 +313,10 @@ Attention is the core mechanism. Understanding it helps you understand failure m
 
 **Mini-Project: `attention-explainer`**
 ```
-Create educational content:
-├── Visual explanation of attention
-├── Code demo showing attention weights
-├── Examples of attention patterns
-└── How this relates to testing
+Build attention exploration utilities:
+├── Prompt position variant generator (start/middle/end)
+├── Attention weight visualizer (ASCII heatmap)
+└── Run demos for 'lost in the middle' testing
 ```
 
 **Resources:**
@@ -342,13 +339,11 @@ Tokenization causes many "weird" LLM behaviors. Understanding it prevents confus
 
 **Mini-Project: `tokenizer-explorer`**
 ```
-Build an interactive tokenizer tool:
-├── Tokenize any text
-├── Show token count
-├── Visualize token boundaries
-├── Compare tokenizers (GPT vs Claude)
-├── Document edge cases found
-└── Testing implications
+Build a token counting and cost estimation tool:
+├── Accurate token counting with tiktoken
+├── Cost estimation across providers
+├── Context window safety checks
+└── Run demos for test suite budgeting
 ```
 
 ---
@@ -444,12 +439,11 @@ This is the #1 thing you'll test for. Understand it deeply.
 
 **Mini-Project: `hallucination-examples`**
 ```
-Create a hallucination catalog:
-├── Collect 20+ real hallucination examples
-├── Categorize by type
-├── Document reproduction steps
-├── Hypothesize causes
-└── Suggest detection methods
+Build a hallucination test dataset:
+├── Labeled test cases (factual, reasoning, citation)
+├── Simple detector with keyword-based grading
+├── Reproduce and document hallucination patterns
+└── Run test suite and report pass/fail rates
 ```
 
 ---
