@@ -52,10 +52,10 @@ def estimate_tokens(text):
 
 # Context window sizes for major models (as of March 2026)
 model_context_windows = {
-    "GPT-5.4": 200_000,
-    "Claude 4.x (Opus)": 200_000,
-    "Claude 4.x (Sonnet)": 200_000,
-    "Gemini 3.1 Pro": 2_000_000,
+    "GPT-5.4": 272_000,          # up to ~1M experimental
+    "Claude Opus 4.6": 1_000_000,
+    "Claude Sonnet 4.6": 1_000_000,
+    "Gemini 3.1 Pro": 1_000_000, # up to 2M in some tiers
 }
 
 print("--- Context Window Sizes ---")
